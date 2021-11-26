@@ -13,7 +13,6 @@ class HomeViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    print(user!)
     let label = UILabel()
     view.addSubview(label)
     label.text = "Seja bem-vindo(a), \(user ?? "")"

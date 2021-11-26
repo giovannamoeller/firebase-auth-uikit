@@ -37,18 +37,13 @@ class ViewController: UIViewController {
       if error != nil {
         print("Falha ao Cadastrar!")
       } else {
-        print("entrou aqui???")
         let alert = UIAlertController(title: "Sucesso", message: "Sucesso no Cadastro!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Uhuuul", style: .default, handler: { _ in
-          print("entrou aqui?")
-          
           self.performSegue(withIdentifier: "moveToLoginPage", sender: self)
         }))
         self.present(alert, animated: true, completion: nil)
       }
     }
   }
-  
-  
 }
 
